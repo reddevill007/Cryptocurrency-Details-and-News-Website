@@ -88,15 +88,6 @@ const Homepage = () => {
           <Cryptocurrencies simplified />
         </div>
       </section>
-      <section className='cryptos bg-black'>
-        <div className="cryptos-container">
-          <div className="d-flex justify-content-between align-items-center mb-3">
-            <h2 className='head'>Latest Crypto News</h2>
-            <Link to="/news" className='btn btn-info'>Show More</Link>
-          </div>
-          <News simplified />
-        </div>
-      </section>
     </>
   )
 }

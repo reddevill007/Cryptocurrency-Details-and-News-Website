@@ -28,13 +28,7 @@ const App = () => {
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/cryptocurrencies">Cryptocurrencies</Link></li>
-                            <li><Link to="/news">News</Link></li>
                         </ul>
-                        <div className="twitter">
-                            <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
-                            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                            <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                        </div>
                     </div>
                     <div className="fotter-bottom">
                         <div className="foot-1">
