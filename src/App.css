@@ -24,9 +24,9 @@ body {
     color: #38ada6;
 }
 
-/* p {
+p {
     color: #fff;
-} */
+}
 
 :root{
     --text-primary:#000;
@@ -212,6 +212,8 @@ a:hover{
 .coin-stats{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    align-items: center;
     border-bottom: 1px solid var(--border);
     font-size: 1rem;
     opacity: 0.9;
@@ -221,12 +223,15 @@ a:hover{
 
 .coin-stats-name{
     display: flex;
+    align-items: center;
     gap: 10px;
     font-size: 1rem;
+    color: #fff;
 }
 
 .stats{
     font-weight: 800;
+    width: fit-content;
 }
 
 .coin-value-statistics-heading p{
@@ -285,10 +290,6 @@ a:hover{
     color: var(--pink);
     font-weight: 700;
     font-size: 1rem;
-}
-
-.coin-link:hover, .coin-stats:hover{
-    background-color: var(--bgSecondary);
 }
 
 @media screen and (max-width:1000px){
@@ -451,8 +452,6 @@ width: 70%;
 
 .stats {
     background: #000;
-    padding: 30px 0;
-    width: 100%;
 }
 
 .stats h1 {

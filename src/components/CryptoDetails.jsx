@@ -66,10 +66,10 @@ const CryptoDetails = () => {
           {stats.map(({ icon, title, value }) => (
             <Col className="coin-stats">
               <Col className="coin-stats-name">
-                <Text>{icon}</Text>
-                <Text>{title}</Text>
+                <Text style={{color: "#fff"}}>{icon}</Text>
+                <Text style={{color: "#fff"}}>{title}</Text>
               </Col>
-              <Text className='stats'>{value}</Text>
+              <Text style={{color: "#fff"}} className='stats'>{value}</Text>
             </Col>
           ))}
         </Col>
@@ -83,10 +83,10 @@ const CryptoDetails = () => {
           {genericStats.map(({ icon, title, value }) => (
             <Col className="coin-stats">
               <Col className="coin-stats-name">
-                <Text>{icon}</Text>
-                <Text>{title}</Text>
+                <Text style={{color: "#fff"}}>{icon}</Text>
+                <Text style={{color: "#fff"}}>{title}</Text>
               </Col>
-              <Text className='stats'>{value}</Text>
+              <Text style={{color: "#fff"}} className='stats'>{value}</Text>
             </Col>
           ))}
         </Col>
@@ -94,17 +94,17 @@ const CryptoDetails = () => {
             <Col className="coin-desk-link">
               <Row className="coin-desk">
                 <Title level={3} className='coin-details-heading'>
-                  What is {data?.data?.coin.name}
+                  What is {data?.data?.coin.name}? <br />
                   {HTMLReactParser(cryptoDetails.description)}
                 </Title>
               </Row>
               <Col className="coin-links">
-                <Title level={3} className='coin-details-heading'>
+                <Title style={{color: "#fff"}} level={3} className='coin-details-heading'>
                 {data?.data?.coin.name} Links
                 </Title>
                 {cryptoDetails.links.map((link) => (
                   <Row className="coin-link" key={link.name}>
-                    <Title level={5} className='link-name'>
+                    <Title style={{color: "#fff"}} level={5} className='link-name'>
                       {link.type}
                     </Title>
                     <a href={link.url} target="_blank" rel='noreferrer'>
